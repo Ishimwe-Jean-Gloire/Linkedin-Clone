@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login here</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        text-decoration: none;
+        font-family: 'Poppins',sans-serif;
+    }
+    .wrapper{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 4rem 10%;
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .wrapper header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 2rem 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .wrapper header .logo{
+        width: fit-content;
+        height: 40px;
+    }
+    .wrapper header .logo img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .navigation{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .navigation .btn-home{
+        padding: 0.5rem 1.6rem;
+        border-radius: 1rem;
+        border: none;
+        background: #fefefe;
+        font-size: 15px;
+        font-weight: 500;
+        color: #444;
+        cursor: pointer;
+    }
+    .navigation .btn-join{
+        padding: 0.5rem 1.6rem;
+        border-radius: 1rem;
+        border: 2px solid transparent;
+        background: #023b85;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        cursor:pointer;
+    }
+    .navigation .btn-join:hover{
+        border: 1px solid #023b85;
+        background: #0449a3;
+    }
+    .login-box{
+        padding: 0rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+    .login-box .login-image{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .login-box .login-image .image{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .login-box .login-image .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .login-box .login-form{
+        width: 100%;
+    }
+    
+    .login-box .login-form .box{
+
+        max-width: 540px;
+        padding: 0rem 1rem;
+        padding-bottom: 1rem;
+        background-color: #fff;
+        box-shadow: 2px 2px 4px #ddd;
+        min-height: 450px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .login-box .login-form .title{
+        padding-bottom: 1rem;
+    }
+    .login-box .login-form .title{
+        padding: 1rem 1rem;
+       }
+    .login-box .login-form h1{
+     padding: 1rem 0rem;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 54px;
+     max-width: 90%;
+     color: #630101;
+    }
+    
+    .login-box .login-form .form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+       }
+    
+       .login-box .login-form .form .inputs-box{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+       }
+    
+       .login-box .login-form .form .inputs-box label{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+        color: #555;
+        text-transform: capitalize;
+       }
+       .login-box .login-form .form .inputs-box input{
+       padding: 0.85rem 1rem;
+       border: 1px solid #777;
+       background-color: #fff;
+       border-radius: 0.5rem;
+       }
+    
+       .login-box .login-form .form .btn-box{
+        padding: 0.85rem 0rem;
+        display: flex;
+        flex-direction: column;
+        }
+    
+        .login-box .login-form .form .btn-box input{
+            padding: 0.9rem 0.2rem;
+            border: 1px solid transparent;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #0262bb;
+            border-radius: 0.5rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            color: #fff;
+            }
+    
+            .login-box .login-form .form .btn-box input:hover{
+                background: #0449a3;
+            }
+    .login-form .forgot{
+        width: 100%;
+        text-align: left;
+        padding: 1.25rem 0rem;
+    }
+    .login-form .forgot a{
+        font-size: 14px;
+        font-weight: 600;
+        color: #011557;
+        text-transform: capitalize;
+    }
+    .login-form .forgot a:hover{
+        color: #06299e;
+    }
+    .login-form .or{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .login-form .or::after{
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transform: translate(0,50px,);
+        height: 1px;
+        background-color: #ccc;
+        z-index: 1;
+    }
+    
+    .login-form .or span{
+       font-size: 16px;
+       color: #555;
+       font-weight: 300;
+       width: fit-content;
+       padding: 0rem 0.5rem;
+       z-index: 100;
+       background-color: #fff;
+    }
+    .login-box .login-form  .btn-box-alt{
+    display: flex;
+    flex-direction: column;
+    
+        }
+    
+    .login-box .login-form  .btn-box-alt .btn-join{
+        padding: 0.7rem 0.2rem;
+        border: 1px solid transparent;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #0262bb;
+        border-radius: 0.5rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        color: #fff;
+        }
+    
+        .login-box .login-form  .btn-box-alt .btn-join:hover{
+            background-color: #074177;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+               <a href="index.html"><img src="./image/logo.png"></a> 
+            </div>
+            <!-- <div class="navigation">
+                <div class="btn-home">Home</div>
+                <div class="btn-join">join now</div>
+            </div> -->
+        </header>
+        <div class="login-box">
+            <div class="login-form">
+                <div class="box">
+                    <div class="title">
+                        <h1>Sign in</h1>
+                    </div>
+    <div class="form">
+                        <div class="inputs-box">
+                            <label for="email">Email</label>
+                            <input type="email" name="" id="email">
+                        </div>
+                        <div class="inputs-box">
+                            <label for="password">Password</label>
+                            <input type="password" name="" id="password">
+                            <div class="forgot">
+                                <a href="#">forgot password</a>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <input type="submit" id="signin" name="login" value="sign in">
+                        </div>
+                </div>
+            </div>
+            </div>
+            <!-- <div class="login-image">
+                <div class="image">
+                    <img src="./image/bg2.png">
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+        import { getDatabase,set,ref,update } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyB90sEcUNcU5oU_24lzg3lg9drDcaqcjQA",
+          authDomain: "linkedin-project-2aae5.firebaseapp.com",
+          databaseURL: "https://linkedin-project-2aae5-default-rtdb.firebaseio.com",
+          projectId: "linkedin-project-2aae5",
+          storageBucket: "linkedin-project-2aae5.appspot.com",
+          messagingSenderId: "258868997522",
+          appId: "1:258868997522:web:22f8314384ab82c18a254b"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+    
+
+        signin.addEventListener('click',(e)=>{
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+     const dt = new Date();
+     const uid =user.uid;
+    update(ref(database, 'users/' + user.uid),{
+            last_login:dt,
+        })
+        if(uid){
+            location.href='home.html'
+        }
+
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+     alert(errorMessage);
+        
+  });
+        });
+
+//         onAuthStateChanged(auth, (user) => {
+//   if (user) {
+//     const uid = user.uid;
+//    location.href='home.html'
+//   } else {
+//     // User is signed out
+//     // ...
+//   }
+// });
+      </script>
+
+<script src="./js/script.js"></script>
+</body>
+
+</html>
+

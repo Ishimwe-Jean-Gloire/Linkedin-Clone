@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="image/logo.png" alt=""></a>
+
+            <div class="search-box">
+                <img src="image/search.png">
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="image/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="image/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="image/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="image/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="image/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="image/1.jpg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+          
+        </div>
+
+<!-- Profile drop down -->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="image/1.jpg">
+           <div>
+             <h3>Ishimwe Jean Gloire</h3>
+            <a href="profile.html">See your profile</a>
+           </div>
+        </div>
+        <hr>
+
+        <a href="#" class="profile-menu-link">
+            <img src="image/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+        </a>
+
+         <a href="#" class="profile-menu-link">
+            <img src="image/setting.png">
+            <p>Settings & Privacy</p>
+            <span>></span>
+        </a>
+
+        <a href="#" class="profile-menu-link">
+            <img src="image/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+
+        <a href="#" class="profile-menu-link">
+            <img src="image/display.png">
+            <p>Display & Accessibility</p>
+            <span>></span>
+        </a>
+        <a href="index.html" class="profile-menu-link">
+            <img src="image/logout.png">
+            <p>Logout</p>
+            <span>></span>
+        </a>
+    </div>
+</div>
+
+    </nav>
+
+    <!-- ============navbar end============= -->
+
+
+    <div class="container">
+        <div class="profile-main">
+          <div class="profile-container">
+            <img src="image/myCoverImage.jpg" width="100%">
+            <div class="profile-container-inner">
+                <img src="image/1.jpg" class="profile-pic">
+                <h1>Ishimwe Jean Gloire</h1>
+                <b>A Full Stack Web Developer || UI & UX Designer</b>
+                <p>Kigali, Rwanda &middot; <a href="#">Contact info</a></p>
+
+                <div class="mutual-connection">
+                    <img src="image/1.jpg">
+                    <span>800 mutual-connection: Horris Igabe</span>
+                </div>
+                <div class="profile-btn">
+                    <a href="#" class="primary-btn"><img src="image/connect.png">Connect</a>
+                    <a href="#"><img src="image/chat.png">Message</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="profile-description">
+            <h2>About</h2>
+            <p>I am 20 year old and I'm highly skilled and motivated web developer based in Rwanda. I design and develop application that help society and solve problem.</p>
+            <a href="#" class="see-more-link">See more...</a>
+          </div>
+
+          <div class="profile-description">
+            <h2>Experience</h2>
+            <div class="profile-desc-row">
+                <img src="image/microsoft.png">
+                <div>
+                    <h3>Lead Front-End Developer</h3>
+                    <b>Microsoft &middot; Full-time</b>
+                    <b>JUN 2023 - Present &middot; 1.5 years</b>
+                    <p>Computer programming is the process of performing a particular computation, usually by designing and building an exucutable computer program.</p>
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="profile-desc-row">
+                <img src="image/slack.png">
+                <div>
+                    <h3>Full Stack Developer</h3>
+                    <b>Slack &middot; Full-time</b>
+                    <b>Feb 2022 - Jan 2023 &middot; 1.5 years</b>
+                    <p>Computer programming is the process of performing a particular computation, usually by designing and building an exucutable computer program.</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="profile-desc-row">
+                <img src="image/slack.png">
+                <div>
+                    <h3>Web Developer</h3>
+                    <b>Google &middot; Full-time</b>
+                    <b>Jan 2023 - Jun 2023 &middot; 5 months</b>
+                    <p>Computer programming is the process of performing a particular computation, usually by designing and building an exucutable computer program.</p>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="experience-link">Show all 3 experience <img src="image/right-arrow.png"></a>
+          </div>
+
+          <div class="profile-description">
+            <h2>Education</h2>
+            <div class="profile-desc-row">
+                <img src="image/stanford.png">
+                <div>
+                    <h3>Wisdom School</h3>
+                    <b>High School Diploma</b>
+                    <b>2016 - 2019</b>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="profile-desc-row">
+                <img src="image/north.png">
+                <div>
+                    <h3>GSNDP Cyanika</h3>
+                    <b>Software Development</b>
+                    <b>2019 - 2023</b>
+                </div>
+            </div>
+          </div>
+
+<div class="profile-description">
+    <h2>Skills</h2>
+    <a href="#" class="skills-btn">Leadership</a>
+    <a href="#" class="skills-btn">Web Design</a>
+    <a href="#" class="skills-btn">Development</a>
+    <a href="#" class="skills-btn">Communication</a>
+    <a href="#" class="skills-btn">UI/UX</a>
+    <a href="#" class="skills-btn">React js</a>
+    <a href="#" class="skills-btn">Javascript</a>
+    <a href="#" class="skills-btn">Node js</a>
+    <a href="#" class="skills-btn">Html/css</a>
+    <a href="#" class="skills-btn">Mysql/MongoDB</a>
+</div>
+
+<div class="profile-description">
+    <h2>languages</h2>
+  <a href="#" class="language-btn">English</a>
+  <a href="#" class="language-btn">Kinyarwanda</a>
+  <a href="#" class="language-btn">French</a>
+  <a href="#" class="language-btn">Kiswahili</a>
+</div>
+
+
+        </div>
+
+        <!-- profile-sidebar -->
+        <div class="profile-sidebar">
+
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;  </small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="image/1.jpg" alt="">
+                    <img src="image/mi-logo.png" alt="">
+                </div>
+                <b>Brand and Demand in xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="image/user-1.png">
+                    <div>
+                        <h2>Sundar Pichai</h2>
+                        <p>CEO of Google</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="image/user-5.png">
+                    <div>
+                        <h2>Satya Nadella</h2>
+                        <p>CEO of Microsoft</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="image/user-5.png">
+                    <div>
+                        <h2>Steven Greg</h2>
+                        <p>Marketing Coordinator</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="image/user-5.png">
+                    <div>
+                        <h2>Shou Zi Chew</h2>
+                        <p>CEO of TikTok</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+<img src="image/logo.png">
+<p>Linkedup &#169; 2022. All right reserved</p>
+            </div>
+        </div>
+    </div>
+ 
+
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>
